@@ -1,0 +1,8 @@
+<h1>List of Billboards</h1>
+<ul>
+  <% @billboards.each do |billboard| %>
+  <li class = "show">
+    <%= link_to billboard.billboard_name, billboard %>
+  </li>
+  <% end %>
+</ul>

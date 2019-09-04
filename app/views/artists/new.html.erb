@@ -1,0 +1,14 @@
+<h1>Add an Artist</h1>
+
+<%= form_for @artist do |f| %>
+  <%= f.label :first_name%>
+  <%= f.text_field :first_name, required: true%>
+
+  <%= f.label :last_name%>
+  <%= f.text_field :last_name, required: true%>
+
+  <%= f.label :age%>
+  <%= f.text_field :age, required: true%>
+
+  <%= f.submit%>
+<% end%>

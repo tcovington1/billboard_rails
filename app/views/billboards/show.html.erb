@@ -1,0 +1,15 @@
+<h1><%= @billboard.billboard_name%></h1>
+
+<h2>Songs</h2>
+
+<p><%@billboard.songs.length <= 0 ? "No Songs" : ''%></p>
+<ul>
+  <% @billboard.songs.each do |song| %>
+  <li class = "show">
+     <%= link_to song.name, song %>
+  </li>
+
+  <% end%>
+</ul>
+
+<button type="button" class="btn btn-danger"><a><%= link_to 'Delete Billboard', @billboard, method: :delete %></a></button>
