@@ -23,6 +23,7 @@ class ArtistsController < ApplicationController
   end
 
   def edit
+    render partial: 'form'
   end
 
   def update 

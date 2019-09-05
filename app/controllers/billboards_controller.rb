@@ -23,6 +23,7 @@ class BillboardsController < ApplicationController
   end
 
   def edit
+    render partial: 'form'
   end
 
   def update 
@@ -32,6 +33,8 @@ class BillboardsController < ApplicationController
       render :edit
     end
   end
+
+  # @billoard.id
 
   def destroy
     @billboard.destroy
