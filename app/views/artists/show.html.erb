@@ -1,2 +1,17 @@
-<h1>Artists#show</h1>
-<p>Find me in app/views/artists/show.html.erb</p>
+<h1>Name: <%= @artist.full_name%></h1>
+<h1>Age: <%= @artist.age%></h1>
+
+
+
+<p><%@artist.songs.length <= 0 ? "No Songs" : ''%></p>
+<ul>
+  <% @artist.songs.each do |song| %>
+  <li>
+   <%= song.title %>
+  </li>
+
+  <% end%>
+</ul>
+
+<button class = "btn btn-danger"><a><%= link_to 'Delete Artist', @artist, method: :delete %></a></button>
+<button type="button" class="btn btn-primary"><a><%= link_to 'Edit Billboard', edit_artist_path(@artist)%></a></button>

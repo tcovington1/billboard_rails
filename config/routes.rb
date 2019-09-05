@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
   resources :artists
   resources :billboards do
-    resources :songs, only: [:index, :new, :create, :destroy]
+    resources :songs, only: [:index, :new, :create, :destroy, :show, :edit]
   end
 
 end

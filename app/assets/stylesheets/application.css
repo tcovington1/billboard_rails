@@ -18,15 +18,16 @@
 }
 
 body {
-  background-color: grey;
+  background-color: #D9D9D9;
+  
 }
 
-a {
+button a {
   color: white;
   
 }
 
-.show {
+a  {
   color: black;
 }
 
