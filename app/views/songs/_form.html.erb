@@ -1,7 +1,10 @@
+
+<div class="container top">
 <h1><%= @song.id ? 'Edit Song' : 'Create Song' %></h1>
 <%= form_for [@billboard, @song] do |f| %>
-  <%= f.label :title %>
-  <%= f.text_field :title, required: true, autofocus: true %>
+  
+  <%= f.bootstrap_text_field :title, required: true, autofocus: true %>
 
   <%= f.submit %>
 <% end %>
+</div>

@@ -1,7 +1,16 @@
-<ul class= 'nav'>
- <li><button type="button" class="btn btn-dark"><a><%= link_to 'Billboards', billboards_path %></a></button></li>
- <li><button type="button" class="btn btn-dark"><a><%= link_to 'Add a Billboard', new_billboard_path %></a></button></li>
- <li><button type="button" class="btn btn-dark"><a><%= link_to 'Artists', artists_path %></a></button></li>
- <li><button type="button" class="btn btn-dark"><a><%= link_to 'Add an artist', new_artist_path %></a></button></li>
 
-</ul>
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">MyBillboard</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="#"><%= link_to 'Billboards', billboards_path %><span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="#"><%= link_to 'Artists', artists_path %></a>
+      
+    </div>
+  </div>
+</nav>

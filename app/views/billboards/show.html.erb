@@ -10,7 +10,7 @@
   <% @billboard.songs.each do |song| %>
   <li class = "show">
      <%= link_to song.title, billboard_song_path(@billboard, song.id) %>
-     <%= link_to 'Show Artist', billboard_song_path(@billboard, song.id) %>
+     <!--<%= link_to 'Show Artist', billboard_song_path(@billboard, song.id) %> -->
   </li>
 
   <% end%>

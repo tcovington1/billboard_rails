@@ -2,6 +2,8 @@ require_relative 'boot'
 
 require 'rails/all'
 
+ActionView::Base.field_error_proc = proc { |input, instance| input }
+
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
